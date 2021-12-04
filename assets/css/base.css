@@ -16,22 +16,135 @@ html {
     box-sizing: border-box;
 }
 
+.mt-50 {
+    margin-top: 50px !important;
+}
+
+.mt-20 {
+    margin-top: 20px !important;
+}
+
+.mt-8 {
+    margin-top: 8px !important;
+}
+
+.main {
+    background-color: var(--primary-color1);
+}
+
 .grid {
     padding: 25px;
-    width: 100vw;
-    height: 100vh;
+    max-width: 100%;
 }
 
 .grid__row {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    margin: -8px;
+}
+
+.grid__col-1 {
+    padding: 8px;
+    width: calc((100% / 12) * 1);
 }
 
 .grid__col-4 {
+    padding: 8px;
     width: calc((100% / 12) * 4);
 }
 
-.grid__col-8 {
-    width: calc((100% / 12) * 8);
+.grid__col-7 {
+    padding: 8px;
+    width: calc((100% / 12) * 7);
+}
+
+.grid__col-10 {
+    padding: 8px;
+    width: calc((100% / 12) * 10);
+}
+
+.grid__col-25 {
+    padding: 8px;
+    width: 25%;
+}
+
+.grid__col-50 {
+    padding: 8px;
+    width: 50%;
+}
+
+.grid__col-full {
+    padding: 8px;
+    width: 100%;
+}
+
+/* Menu */
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: calc(100vh - 50px);
+}
+
+.menu-list {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.menu-list__item {
+    margin: 10px 0;
+}
+
+.menu-list__item--active
+.menu-list__item-link {
+    background-color: var(--primary-color2);
+}
+
+.menu-list__item-link {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    max-width: 55px;
+    height: 55px;
+    font-size: 2rem;
+    line-height: 2rem;
+    color: var(--text-color);
+    background: -webkit-linear-gradient(0deg, transparent, var(--primary-color2) 180%);
+    border-radius: 50px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.menu-list__item-link:hover {
+    max-width: 200px;
+    background-color: var(--primary-color2);
+}
+
+.menu-list__item-icon {
+    width: 55px;
+    height: 55px;
+    border-radius: 50px;
+    line-height: 55px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+.menu-list__item-icon i {
+    line-height: 55px;
+}
+
+.menu-list__item-desc {
+    padding-left: 20px;
+    line-height: 55px;
+}
+
+/* Header content */
+.header-content {
+    font-size: 2.6rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-transform: uppercase;
 }

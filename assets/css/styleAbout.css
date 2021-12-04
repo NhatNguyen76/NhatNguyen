@@ -1,0 +1,230 @@
+/* HEADER */     
+.header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin: 12px;
+    font-size: 6rem;
+    font-weight: 900;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.header::before {
+    z-index: -1;
+    content: "About me";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 10rem;
+    color: #383025;
+}
+
+.header-color {
+    margin-left: 12px;
+    color: var(--primary-color2);
+}
+
+.info {
+    font-size: 1.8rem;
+    color: var(--text-color);
+}
+
+.info__list {
+    list-style-type: none;
+}
+
+.info__item {
+    margin-top: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.info__item-head {
+    margin-right: 4px;
+    font-weight: 500;
+    color: #b9b8b8;
+}
+
+.contact__social {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 8px;
+    height: 40px;
+    max-width: 40px;
+    border-radius: 50px;
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.5s ease-out;
+}
+
+.contact__social:nth-child(1) {
+    background: -webkit-linear-gradient(45deg, transparent, #4267B2 180%);
+}
+
+.contact__social:nth-child(2) {
+    background: -webkit-linear-gradient(45deg, transparent, #E1306C 180%);
+}
+
+.contact__social:nth-child(3) {
+    background: -webkit-linear-gradient(45deg, transparent, #457be9 180%);
+}
+
+.contact__social:nth-child(4) {
+    background: -webkit-linear-gradient(45deg, transparent, #FF0000 180%);
+}
+
+.contact__social:hover {
+    max-width: 200px;
+}
+
+.contact__social:nth-child(1):hover
+.contact__social-icon {
+    background-color: #4267B2;
+}
+
+.contact__social:nth-child(2):hover
+.contact__social-icon {
+    background-color: #E1306C;
+}
+
+.contact__social:nth-child(3):hover
+.contact__social-icon {
+    background-color: #457be9;
+}
+
+.contact__social:nth-child(4):hover
+.contact__social-icon {
+    background-color: #FF0000;
+}
+
+.contact__social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 40px;
+    transition: all 0.3s ease-out;
+}
+
+.contact__social-icon i {
+    font-size: 1.8rem;
+    line-height: 40px;
+}
+
+.contact__social-icon img {
+    width: 18px;
+    line-height: 40px;
+    border-radius: 4px;
+}
+
+.contact__social-text {
+    padding: 0 12px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+.contact__box {
+    display: flex;
+}
+
+.contact__box-call {
+    min-width: 180px;
+    border: 1px solid rgb(85, 71, 52);
+    border-radius: 4px;
+}
+
+.contact__box-email {
+    flex: 1;
+    margin-left: 8px;
+    border: 1px solid rgb(85, 71, 52);
+    border-radius: 4px;
+}
+
+.contact__box-address {
+    margin-top: 8px;
+    border: 1px solid rgb(85, 71, 52);
+    border-radius: 4px;
+}
+
+.contact__box-header {
+    margin: 8px;
+    font-size: 1.8rem;
+    color: #b9b8b8;
+    font-weight: 500;
+}
+
+.contact__box-content {
+    margin: 25px 0;
+    padding: 0 8px;
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.header-edu {
+    margin: 0 auto;
+}
+
+.edu-box {
+    display: flex;
+    padding: 8px;
+    width: 100%;
+    background-color: #473f35;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px rgba(235, 235, 235, 0.4);
+}
+
+.edu-box__img {
+    margin-right: 8px;
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    border: 1px solid var(--primary-color1);
+}
+
+.edu-box__content {
+    color: var(--text-color);
+}
+
+.edu-box__content-years {
+    display: inline-block;
+    padding: 1px 6px;
+    background-color: var(--primary-color2);
+    border-radius: 4px;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.edu-box__content-school {
+    margin-top: 12px;
+    font-size: 2.4rem;
+}
+
+.edu-box__content-classes {
+    margin-top: 8px;
+}
+
+.edu-box__content-class {
+    margin-right: 4px;
+    padding: 0 4px;
+    background-color: #f89e49;
+    border-radius: 2px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: black;
+}

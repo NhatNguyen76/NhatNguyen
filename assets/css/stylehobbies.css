@@ -1,0 +1,185 @@
+/* HEADER */     
+.header {
+    z-index: 1;
+    position: relative;
+    text-align: center;
+    margin: 12px;
+    font-size: 6rem;
+    font-weight: 900;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+.header::before {
+    z-index: -1;
+    content: "My hobbies";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    font-size: 10rem;
+    color: #383025;
+}
+
+.header-color {
+    margin-left: 12px;
+    color: var(--primary-color2);
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    width: 100%;
+    list-style-type: none;
+}
+
+.item a {
+    margin: 0 12px;
+    font-size: 2.2rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+}
+
+.item--active a {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--primary-color2);
+}
+
+.item:hover a {
+    font-size: 2.4rem;
+    font-weight: 600;
+    color: var(--primary-color2);
+}
+
+.box {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 8px var(--primary-color2);
+    overflow: hidden;
+    transition: all 0.3s ease-out;
+}
+
+.box:hover {
+    box-shadow: 0 0 16px var(--primary-color2);
+    transform: scale(1.04);
+}
+
+.box:hover .box__desc,
+.box:hover .box__name {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.box__img {
+    width: 100%;
+    height: 370px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+.box__name {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(47, 37, 25, 0.85);
+    border-radius: 8px;
+    border-top: 2px solid var(--primary-color2);
+    border-bottom: 2px solid var(--primary-color2);
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--primary-color2);
+    text-transform: uppercase;
+    text-shadow: 0.5px 0.5px 1px var(--text-color);
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: all 0.3s ease-out;
+}
+
+.box__desc {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 8px;
+    background-color: rgba(47, 37, 25, 0.85);
+    border-radius: 8px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: all 0.3s ease-out;
+}
+
+.box__desc-header {
+    text-align: center;
+    font-size: 2.4rem;
+    color: var(--text-color);
+}
+
+.box__desc-list {
+    margin-top: 12px;
+}
+
+.box__desc-item {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.box__desc-item-head {
+    font-size: 1.5rem;
+    color: #b9b8b8;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.box__desc-item-text-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box__desc-item-text {
+    margin: 2px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    background-color: var(--primary-color2);
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 600;
+}
+
+/* Music */
+.singer {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    width: 100%;
+    background-color: #473f35;
+    border-radius: 8px;
+}
+
+.singer__img {
+    width: 120px;
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+}
+
+.singer__name {
+    margin-left: 16px;
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--text-color);
+}
